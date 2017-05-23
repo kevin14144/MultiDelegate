@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+//design pattern
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -26,7 +26,6 @@ int call_a_funcs(int (*call_this)(float, int))
 {
     int output = call_this(5.5, 7);
     return output;
-
 }
 
 
