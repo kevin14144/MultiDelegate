@@ -1,0 +1,7 @@
+debug/
+Makefile
+.qmake.stash
+Makefile.Debug
+Makefile.Release
+MultiDelegate.pro.user
+mainwindow.cpp.autosave
