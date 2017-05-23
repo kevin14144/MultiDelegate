@@ -26,7 +26,9 @@ int call_a_funcs(int (*call_this)(float, int))
 {
     int output = call_this(5.5, 7);
     return output;
+
 }
+
 
 int do_math(float arg1, int arg2)
 {
