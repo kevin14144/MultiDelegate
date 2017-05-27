@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\delegate.o
+./release\teacher.o
+./release\studenta.o
+./release\AbstractSubject.o
+./release\AbstractObserver.o
+./release\studentb.o
+./release\abstracthuman.o
+./release\moc_mainwindow.o
+);

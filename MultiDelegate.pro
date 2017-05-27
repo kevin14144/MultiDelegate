@@ -25,9 +25,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    delegate.cpp
+    delegate.cpp \
+    teacher.cpp \
+    studenta.cpp \
+    AbstractSubject.cpp \
+    AbstractObserver.cpp \
+    studentb.cpp \
+    abstracthuman.cpp
 
 HEADERS  += mainwindow.h \
-    delegate.h
+    delegate.h \
+    teacher.h \
+    studenta.h \
+    AbstractSubject.h \
+    AbstractObserver.h \
+    studentb.h \
+    abstracthuman.h
 
 FORMS    += mainwindow.ui

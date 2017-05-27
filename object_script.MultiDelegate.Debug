@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\delegate.o
+./debug\teacher.o
+./debug\studenta.o
+./debug\AbstractSubject.o
+./debug\AbstractObserver.o
+./debug\studentb.o
+./debug\abstracthuman.o
+./debug\moc_mainwindow.o
+);
