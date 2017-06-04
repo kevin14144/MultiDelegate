@@ -15,7 +15,7 @@ public:
     /// \param other
     /// \return
     ///
-    bool operator==( const AbstractObserver& other ) const{};
+    //bool operator==( const AbstractObserver& other ) const{};
 };
 
 #endif // OBSERVER_H

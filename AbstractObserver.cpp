@@ -1,5 +1,5 @@
 #include "AbstractObserver.h"
-#include<QDebug>
+#include <QDebug>
 AbstractObserver::AbstractObserver()
 {
 

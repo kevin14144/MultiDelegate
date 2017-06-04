@@ -3,10 +3,19 @@
 
 #include<string>
 using namespace std;
+
 class AbstractHuman
 {
 public:
+
     AbstractHuman();
+
+
+    AbstractHuman(string Name,int Weight,int Height):_Name(Name),_Weight(Weight),_Height(Height)
+    {
+        //Initial
+    }
+
     //Abstract method implement
     ///
     /// \brief SetName
@@ -14,7 +23,7 @@ public:
     ///
     void virtual SetName(string value)
     {
-        this->Name = value;
+        this->_Name = value;
     }
     ///
     /// \brief GetName
@@ -22,7 +31,7 @@ public:
     ///
     string virtual GetName()
     {
-        return this->Name;
+        return this->_Name;
     }
     ///
     /// \brief SetWeight Set Weight
@@ -30,7 +39,7 @@ public:
     ///
     void virtual SetWeight(int value)
     {
-        this->Weight = value;
+        this->_Weight = value;
     }
     ///
     /// \brief GetWeight
@@ -38,7 +47,7 @@ public:
     ///
     int virtual GetWeight()
     {
-        return this->Weight;
+        return this->_Weight;
     }
     ///
     /// \brief SetHeight
@@ -46,7 +55,7 @@ public:
     ///
     void virtual SetHeight(int value)
     {
-        this->Height = value;
+        this->_Height = value;
     }
     ///
     /// \brief GetHeight
@@ -54,12 +63,12 @@ public:
     ///
     int virtual GetHeight()
     {
-        return this->Height;
+        return this->_Height;
     }
 protected:
-    string Name = "";//Name
-    int Weight = 0;//Weight
-    int Height = 0;//Height
+    string _Name;//Name
+    int _Weight;//Weight
+    int _Height;//Height
 };
 
 #endif // ABSTRACTHUMAN_H

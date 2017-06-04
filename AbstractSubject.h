@@ -10,6 +10,7 @@ class AbstractSubject
 {
 public:
 
+    AbstractSubject();
     //write here to become inline function
     ///
     /// \brief Attach observer

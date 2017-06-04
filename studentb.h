@@ -5,24 +5,32 @@
 #include<AbstractObserver.h>
 #include<string>
 #include<qdebug.h>
+
 using namespace  std;
 
 class StudentB : public AbstractObserver,public AbstractHuman
 {
 public:
+
     StudentB();
-    StudentB(string Name,int Weight,int Height);
-    void Update()
+
+    StudentB(string Name,int Weight,int Height):AbstractHuman(Name,Weight,Height)
     {
-        this->AbstractObserver::Update();//Run parent method
-        qDebug()<<"Student Name:" << this->Name.c_str();
-        qDebug()<<"Student Weight:" << this->Weight;
-        qDebug()<<"Student Height:" << this->Height;
     }
-    //Override method
+
+    ///
+    /// \brief Update State
+    ///
+    /// Override virtual function
+    void Update();
+
+    ///
+    /// \brief SetWeight
+    /// \param value
+    /// Override virtual function
     void SetWeight(int value)
     {
-         this->Weight = value -3;
+         this->_Weight = value -3;
     }
 
 };

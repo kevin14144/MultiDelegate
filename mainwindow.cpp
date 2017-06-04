@@ -1,4 +1,4 @@
-/*2017.05.27 by YCW
+/*2017.06.05 by YCW
  *
  * Practive Publich and Observer OO
  *
@@ -9,6 +9,7 @@
 #include <teacher.h>
 #include <studenta.h>
 #include <studentb.h>
+#include <AbstractObserver.h>
 
 //design pattern
 MainWindow::MainWindow(QWidget *parent) :
@@ -23,39 +24,17 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-typedef int (*MathFunc)(float, int);
-
-int call_a_func(MathFunc call_this)
-{
-    int output = call_this(5.5, 7);
-    return output;
-}
-
-int call_a_funcs(int(*call_this)(float, int))
-{
-    int output = call_this(5.5, 7);
-    return output;
-}
-
-
-int do_math(float arg1, int arg2)
-{
-    return arg2;
-}
-#include<AbstractObserver.h>
+///
+/// \brief  Publich and Observer , use imhernterce
+///
 void MainWindow::on_pushButton_clicked()
 {
-    //int result = call_a_func(do_math);
-
     Teacher techerChang;
-    StudentA GoodStudent;
-    GoodStudent.SetName("YCW");
-    GoodStudent.SetWeight(60);
-    GoodStudent.SetHeight(174);
+    StudentA GoodStudent("YCW",60,174);
+
     StudentB BsadStudent;
     BsadStudent.SetName("HCC");
-    BsadStudent.SetWeight(50);
+    BsadStudent.SetWeight(50);//Actually Weight is x-3
     BsadStudent.SetHeight(165);
 
     AbstractObserver* tes;//Abstract Declare
